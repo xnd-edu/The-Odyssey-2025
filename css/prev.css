@@ -1,0 +1,121 @@
+/* Stylesheet only for the "Artists" webpage */
+
+main {
+    margin-top: 5%;
+}
+
+/* Stars fade animation, one for each side */
+@keyframes slideInFade {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Artists pictures rotation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fade-in-left {
+    animation: slideInFade 2s ease-out forwards;
+}
+
+.fade-in-right {
+    animation: slideInFadeRight 2s ease-out forwards;
+}
+
+#front_text h1 {
+    font-weight: bolder;
+    padding-bottom: 12px;
+}
+
+#front_text p {
+    font-size: 22px;
+}
+
+.artist {
+    display: block;
+    margin-bottom: 10%;
+}
+
+.artist.simple img {
+    animation: rotate 3s ease-in-out;
+    animation-delay: 2s; 
+    transform-origin: center;
+    display: block;
+    margin: auto;
+}
+
+.sample {
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+}
+
+.sample audio {
+    max-width: 100%;
+}
+
+.artist_desc {
+    font-size: 16px;
+}
+
+#continuation {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#others {
+    max-width: 50%;
+}
+
+#others .carousel-inner {
+    width: 800px;
+    height: 500px;
+    position: relative;
+}
+
+#others .carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Make the captions fit the carousel and more legible */
+#others .carousel-caption {
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 90%;
+}

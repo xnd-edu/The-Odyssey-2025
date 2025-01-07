@@ -1,19 +1,23 @@
+/* Stylesheet used for the main webpage and partially the "Artists" one */
+
 html, body {
     width: 100%;
     margin: 0;
-    color: white !important;
+    color: white;
     box-sizing: border-box;
-    font-family: "Open Sans", serif !important;
+    font-family: "Open Sans", serif !important; /* Prevent Bootstrap rules to overwrite the font */
     font-size: 14px;
-    background-color: black !important;
+    background-color: black;
     scroll-behavior: smooth;
 }
 
+/* Make links white and without decoration by default */
 a {
     text-decoration: none;
     color: white;
 }
 
+/* V-- Header --V */
 header {
     background-color: black;
     position: fixed;
@@ -28,6 +32,7 @@ header {
     z-index: 100;
 }
 
+/* Header transparency animation when hover */
 header:hover {
     opacity: 1;
     animation: none;
@@ -41,17 +46,6 @@ header:hover {
         opacity: 0.5;
     }
     
-}
-
-#warning {
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#warning a {
-    color: black;
 }
 
 .top_bar {
@@ -118,18 +112,23 @@ header:hover {
     transition: width .3s;
 }
 
+/* Change search button's size when hover */
 #header_right svg:hover {
     width: 46px;
 }
+
+/* ^-- End of header --^ */
+
+/* V-- Lateral bookmarks menu --V */
 
 .sidebar {
     position: fixed;
     top: 20%;
     left: 20px;
     width: 200px;
-    color: white;
+    color: black;
     padding: 20px;
-    background-color: rgba(39, 39, 39, 1);
+    background-image: linear-gradient(to bottom right, white, black);
     border-radius: 10px;
     z-index: 200;
 }
@@ -145,15 +144,19 @@ header:hover {
 }
 
 .sidebar nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
 
 .sidebar nav ul li a:hover {
-    color: #8f8f8f;
+    color: white;
 }
+
+/* ^-- End of lateral bookmarks menu --^ */
+
+/* V-- Main website --V */
 
 main {
     position: relative;
@@ -314,6 +317,10 @@ main {
     font-size: 16px;
 }
 
+/* ^-- End of main website --^*/
+
+/* V-- Footer --V */
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -336,3 +343,5 @@ footer a:hover {
     justify-content: flex-end;
     align-items: center;
 }
+
+/* ^-- End of footer --^*/

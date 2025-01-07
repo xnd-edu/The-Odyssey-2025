@@ -1,12 +1,155 @@
 <!DOCTYPE html>
+
+<!-- CSS and Bootstrap webpage -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prev.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>The Artists | The Odyssey 2025</title>
 </head>
 <body>
-    
+    <div>
+        <header>
+            <div class="top_bar">
+                <div class="header_container">
+                    <div id="header_left">
+                        <a href="index.html"><img class="logo" src="images/logo.png" alt="The Odyssey"></a>
+                    </div>
+                    <div id="header_center">
+                        <nav>
+                            <ul>
+                                <li><a href="preview.html">THE ARTISTS</a></li>
+                                <li><a href="form.html">SIGN UP</a></li>
+                                <li><a href="https://github.com/xnd-edu/The-Odyssey-2025">// SOURCE CODE \\</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="header_right">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="11" cy="11" r="5.5" stroke="#ffffff" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: #e8e6e3;"></circle> <path d="M15 15L19 19" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: #e8e6e3;"></path> </g></svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="container-fluid">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4">
+                    <img class="img-fluid fade-in-left" src="images/stars.jpeg" alt="Stars">
+                </div>
+                <div class="col-md-4 text-center" id="front_text">
+                    <h1>Meet the stars of the journey</h1>
+                    <p>Big or small, a star will always guide you through.<br>Discover some here.</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid fade-in-right" src="images/stars.jpeg" alt="Stars">
+                </div>
+            </div>
+
+            <div class="artist simple">
+                <!-- I'm not a furry I promise -->
+                <div class="artist_row row justify-content-center align-items-center" id="vylet">
+                    <div class="col-6 col-md-2">
+                        <h3>Vylet Pony</h3>
+                        <img class="img-fluid rounded" src="images/vylet.jpeg" alt="Vylet Pony">
+                    </div>
+                    <div class="artist_desc col-6 col-md-5">
+                        <p>Vylet Pony is a creative powerhouse whose vibrant soundscapes push the boundaries of conventional music. Emerging from the niche "brony" fandom, Vylet has evolved into a genre-defying artist, blending elements of electronic, pop, and experimental styles. Her evocative storytelling and bold production resonate far beyond her roots, earning her a growing fanbase across diverse communities. In The Odyssey, we celebrate artists like Vylet who remind us that the universe of music is as vast and limitless as the stars themselves.</p>
+                    </div>
+                    <div class="sample col-12 col-md-5 mt-5 mt-md-0">
+                        <p>ANTONYMPH - Vylet Pony</p>
+                        <audio controls>
+                            <source src="assets/ANTONYMPH.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artist simple">
+                <div class="artist_row row justify-content-center align-items-center" id="vylet">
+                    <div class="col-6 col-md-2">
+                        <h3>Eminem</h3>
+                        <img class="img-fluid rounded" src="images/Eminem.jpg" alt="Vylet Pony">
+                    </div>
+                    <div class="artist_desc col-6 col-md-5">
+                        <p>A global icon whose lyrical talent and storytelling have left a permanent mark on the music industry. Eminem, known as the "Rap God", is not only a pioneer of hip-hop but also a voice for millions of fans around the world. With raw emotion, intricate rhymes, and unmatched speed, his music transcends boundaries and continues to inspire both fans and aspiring artists alike.</p>
+                    </div>
+                    <div class="sample col-12 col-md-5 mt-5 mt-md-0">
+                        <video width="320" height="240" controls>
+                            <source src="assets/Lose Yourself.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div id="continuation">
+                <h2>And more artists...</h2>
+            </div>
+            <div class="artist d-flex justify-content-center">
+                <div id="others" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#others" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#others" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#others" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#others" data-bs-slide-to="3"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/adele.jpg" alt="Adele" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Adele</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/david-guetta.jpg" alt="David Guetta" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>David Guetta</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/aurora.jpg" alt="AURORA" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>AURORA</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/alan-walker.jpg" alt="Alan Walker" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Alan Walker</h3>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#others" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#others" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="notice">
+                THIS IS NOT A REAL EVENT! "The Odyssey 2025" is just a fictional music festival done for the creation of this website and has no real relation with the artists, companies or places mentioned in it.
+            </div>
+            <div id="links">
+                <a href="">LEGAL NOTICE</a>
+                <a href="">PRIVACY POLICY</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
